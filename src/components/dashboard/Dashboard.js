@@ -23,8 +23,12 @@ export class Dashboard extends Component {
   }
 }
 
+// Subscription to redux store
 const mapStateToProps = state => {
+  // state is from the redux store
   return {
+    // return props called projects and populate it
+    // with the state.projects from redux store
     projects: state.project.projects
   }
 }
